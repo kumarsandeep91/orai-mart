@@ -1,52 +1,57 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { useStyletron } from "styletron-react";
 
 export default function Home() {
+  const [css] = useStyletron();
   return (
-    <div className={styles.container}>
+    <div className={css({ minHeight: "100vh" })}>
       <Head>
-        <title>Create OraiMart</title>
+        <title>OraiMart-Grocerry Delivered Safely</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+      <main>
+        <div
+          className={css({
+            backgroundColor: "#fcc45c",
+            minHeight: "100px",
+            padding: "16px",
+          })}
+        >
+          <div
+            className={css({
+              display: "grid",
+              justifyContent: "center",
+              gridGap: "16px",
+            })}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            <img className={css({ height: "50px" })} src="/images/logo.jpeg" />
+          </div>
+          <div
+            className={css({
+              display: "grid",
+              gridTemplateColumns: "20% 60% 20%",
+              width: "100%",
+              gridGap: "8px",
+              justifyContent: "center",
+              alignContent: "center",
+            })}
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div className={css({ height: "30rem", margin: "auto" })}>
+              <img
+                className={css({ maxHeight: "100%", maxWidth: "100%" })}
+                src="/images/clip1.png"
+              />
+            </div>
+            <div>dfsdfddsdsfsddfds</div>
+            <div className={css({ height: "30rem", margin: "auto" })}>
+              <img
+                className={css({ maxHeight: "100%", maxWidth: "100%" })}
+                src="/images/clip2.png"
+              />
+            </div>
+          </div>
         </div>
       </main>
 
