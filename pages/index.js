@@ -1,9 +1,22 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useStyletron } from "styletron-react";
+import { Button, Typography } from "@material-ui/core";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import red from "@material-ui/core/colors/red";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+
+const useStyles = makeStyles((theme) => ({
+  button: {
+    margin: theme.spacing(1),
+  },
+}));
 
 export default function Home() {
   const [css] = useStyletron();
+  const theme = useTheme();
+  const classes = useStyles();
+
   return (
     <div className={css({ minHeight: "100vh" })}>
       <Head>
@@ -23,34 +36,101 @@ export default function Home() {
             className={css({
               display: "grid",
               justifyContent: "center",
-              gridGap: "16px",
             })}
           >
-            <img className={css({ height: "50px" })} src="/images/logo.jpeg" />
+            <div
+              className={css({
+                display: "grid",
+                gridTemplateColumns: "auto auto",
+                gridTemplateRows: "auto auto",
+                columnGap: "8px",
+                justifyContent: "center",
+              })}
+            >
+              <img
+                className={css({
+                  height: "50px",
+                  gridColumn: "1",
+                  gridRow: "1/3",
+                  alignSelf: "center",
+                })}
+                src="/images/logo.jpeg"
+              />
+              <Typography
+                className={css({
+                  color: theme.palette.secondary.main,
+                  fontWeight: "bold",
+                })}
+                variant="h5"
+              >
+                Orai Mart
+              </Typography>
+              <Typography
+                className={css({ color: theme.palette.grey[800] })}
+                variant="body2"
+              >
+                Stay Home, Stay Safe
+              </Typography>
+            </div>
           </div>
           <div
             className={css({
               display: "grid",
-              gridTemplateColumns: "20% 60% 20%",
+              gridTemplateColumns: "30% 40% 30%",
               width: "100%",
               gridGap: "8px",
               justifyContent: "center",
               alignContent: "center",
             })}
           >
-            <div className={css({ height: "30rem", margin: "auto" })}>
-              <img
-                className={css({ maxHeight: "100%", maxWidth: "100%" })}
-                src="/images/clip1.png"
-              />
+            <img
+              className={css({
+                maxHeight: "30rem",
+                maxWidth: "100%",
+                justifySelf: "end",
+                alignSelf: "center",
+              })}
+              src="/images/clip1.png"
+            />
+            <div
+              className={css({
+                display: "grid",
+                alignContent: "center",
+                justifyContent: "center",
+                textAlign: "center",
+              })}
+            >
+              <h1
+                className={css({
+                  margin: "4px 0px",
+                  fontWeight: "bold",
+                  fontSize: "3rem",
+                })}
+              >
+                Stay Home - We'll Deliver
+              </h1>
+              <p className={css({ margin: "4px 0px" })}>
+                Get your groceries delivered in less than an hour
+              </p>
+
+              <Button
+                variant="contained"
+                color="primary"
+                className={classes.button}
+                startIcon={<LocationOnIcon />}
+              >
+                Serving in Orai
+              </Button>
             </div>
-            <div>dfsdfddsdsfsddfds</div>
-            <div className={css({ height: "30rem", margin: "auto" })}>
-              <img
-                className={css({ maxHeight: "100%", maxWidth: "100%" })}
-                src="/images/clip2.png"
-              />
-            </div>
+            <img
+              className={css({
+                maxHeight: "30rem",
+                maxWidth: "100%",
+                justifySelf: "start",
+                alignSelf: "center",
+              })}
+              src="/images/clip2.png"
+            />
           </div>
         </div>
       </main>
