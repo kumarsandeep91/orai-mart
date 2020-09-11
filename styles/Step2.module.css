@@ -1,0 +1,82 @@
+
+.StepSection{
+    height: 50vh;
+    margin: 30px 0 50px 0;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "textBox imageArea";
+}
+.textBox{
+    grid-area: textBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textContainer{
+   text-align: center;
+}
+
+.imageArea{
+    grid-area: imageArea;
+}
+.MainText{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.SubText{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.numberBox{
+    display: inline-block;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #FF8162;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.Step2Img{
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .StepSection{
+        grid-template-columns: 1fr;
+        grid-template-areas: "imageArea" "textBox" ;
+    }
+    .textBox{
+        margin: 0;
+    }
+
+    .imageArea{
+        text-align: end;
+    }
+
+    .MainText{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .SubText{
+        font-size: 20px;
+    }
+
+    .Step2Img{
+        width: 95%;
+    }
+
+    .numberBox{
+        display: block;
+         margin:10px auto;
+    }
+
+  }

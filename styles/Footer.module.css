@@ -1,0 +1,107 @@
+.FooterSection{
+    min-height: 60vh;
+    padding: 10px 150px;
+}
+
+.Row{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 10px;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
+.Col{
+    margin: 10px;
+}
+.Col h1{
+    font-size: 25px;
+}
+.Col ul{
+    list-style: none;
+    padding: none;
+}
+.Col ul li{
+    padding: 3px 0;
+}
+
+.FooterLinks{
+    color: #626168;
+    text-decoration: none;
+}
+
+.graveYardLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "copyright centerLinks icons";
+    justify-content: space-between;
+}
+
+
+.graveYardLinks p{
+    color: #626168;
+    grid-area: copyright;
+}
+
+.centerLink{
+    color: #626168;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.centerLinkBox{
+    text-align: center;
+    grid-area: centerLinks;
+}
+.icons{
+    grid-area: icons;
+    text-align: center;
+}
+.link{
+    padding:0 5px;
+}
+.instagram{
+    color: #C23456;
+}
+.youtube{
+    color: #E53935;
+}
+.facebook{
+    color: #475993;
+}
+.twitter{
+    color: #03A9F4;
+}
+
+@media screen and (max-width: 480px) {
+    .FooterSection{
+        min-height: 60vh;
+        padding: 10px ;
+    }
+    .Row{
+        grid-template-columns: repeat(auto-fit,90%);
+        margin:20px 0;
+    }
+    .Col{
+        width: 100%;
+    }
+    .graveYardLinks{
+        grid-template-columns: 1fr;
+        grid-template-areas: "centerLinks" "icons" "copyright";
+    }
+    .centerLink{
+        display: block;
+        padding: 5px;
+        text-align: start;
+    }
+    .graveYardLinks p{
+        text-align: center;
+    }
+    .centerLinkBox{
+        padding: 0 5px 0px 30px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+  }

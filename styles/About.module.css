@@ -1,0 +1,90 @@
+
+.aboutContainer{
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+.aboutSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "textBox imageArea";
+}
+.textBox{
+    grid-area: textBox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textContainer{
+    align-items: flex-start;
+}
+
+.imageArea{
+    grid-area: imageArea;
+}
+.MainText{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hashtag{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #807F81;
+}
+
+.Button{
+    background: #3BC08B;
+}
+
+.AboutImage{
+    width: 100%;
+}
+
+.aboutRow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30%);
+    padding: 10px 40px;
+    justify-content: center;
+}
+.aboutCol{
+    margin: 10px;
+    width: 80%;
+}
+
+.aboutCol img{
+    margin-right: 5px;
+    padding: 20px 10px 10px 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .aboutSection{
+        grid-template-columns: 1fr;
+        grid-template-areas: "textBox" "imageArea";
+    }
+    .textBox{
+        margin: 30px 0;
+    }
+
+    .imageArea{
+        text-align: end;
+    }
+
+    .AboutImage{
+        width: 95%;
+    }
+    
+    .aboutRow{
+        grid-template-columns: repeat(auto-fit,90%);
+        padding: 10px 40px;
+        justify-content: center;
+    }
+  }
+
+   @media screen and (max-width: 768px) {
+    
+.aboutContainer{
+    min-height: 70vh;
+}
+  }
