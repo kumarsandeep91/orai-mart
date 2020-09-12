@@ -26,16 +26,16 @@ export default function Footer() {
                     <h1>About Us</h1>
                     <ul  className={css({padding:0})}>
                         <li><Link className={FooterStyles.FooterLinks} href="/categories"><a>Categories</a></Link></li>
-                        <li><Link className={FooterStyles.FooterLinks} href="#"><a>Become a Partner</a></Link></li>
-                        <li><Link className={FooterStyles.FooterLinks} href="#"><a>Blog</a></Link></li>
-                        <li><Link className={FooterStyles.FooterLinks} href="#"><a>Careers</a></Link></li>
+                        <li><Link className={FooterStyles.FooterLinks} href="/become-a-partner"><a>Become a Partner</a></Link></li>
+                        <li><Link className={FooterStyles.FooterLinks} href="/coming-soon"><a>Blog</a></Link></li>
+                        <li><Link className={FooterStyles.FooterLinks} href="/coming-soon"><a>Careers</a></Link></li>
                     </ul>
                 </div>
                 <div className={FooterStyles.Col}>
                     
                     <h1>Questions ?</h1>
                     <ul className={css({padding:0})}>
-                        <li><Link className={FooterStyles.FooterLinks} href="#"><a>Frequently Asked Questions</a></Link></li>
+                        <li><Link className={FooterStyles.FooterLinks} href="/coming-soon"><a>Frequently Asked Questions</a></Link></li>
                         <li><Link className={FooterStyles.FooterLinks} href="#"><a>Contact Us</a></Link></li>
                     </ul>
                 </div>
@@ -43,9 +43,9 @@ export default function Footer() {
             <div className={FooterStyles.graveYardLinks}>
                 <p  className={css({margin:0})}>© 2020 Orai Mart</p>
                 <div className={FooterStyles.centerLinkBox}>
-                    <Link href="#" className={FooterStyles.centerLink}><a className={css({margin:'0 10px'})}>Privacy</a></Link>
-                    <Link href="#" className={FooterStyles.centerLink} ><a className={css({margin:'0 10px'})}>Accesbility</a></Link>
-                    <Link href="#" className={FooterStyles.centerLink}><a className={css({margin:'0 10px'})}>Terms</a></Link>
+                    <Link href="/coming-soon" className={FooterStyles.centerLink}><a className={css({margin:'0 10px'})}>Privacy</a></Link>
+                    <Link href="/coming-soon" className={FooterStyles.centerLink} ><a className={css({margin:'0 10px'})}>Accesbility</a></Link>
+                    <Link href="/coming-soon" className={FooterStyles.centerLink}><a className={css({margin:'0 10px'})}>Terms</a></Link>
                 </div>
                 <div className={FooterStyles.icons}>
                     <a target="_blank" aria-label="Instagram" rel="noopener" href=""className={FooterStyles.link} >
