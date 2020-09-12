@@ -14,14 +14,9 @@ export default function step1() {
               
                 <h1 className={StepStyles.MainImgText}>
                     <span className={StepStyles.numberBox}>1</span>
-                    Request in the app
+                    Pickup Phone and Dial
                 </h1>
                 <p className={StepStyles.SubImgText}>Set your delivery location, Choose your groceries from a wide range of 5000+ products</p>
-
-                <div className="LinkBox">
-                    <img src="/images/appleStore.svg" alt="Apple Store Link"/>
-                    <img src="/images/googlePlay.svg" alt="Google Play Store Link"/>
-                </div>
             </div>
         </div>
     )

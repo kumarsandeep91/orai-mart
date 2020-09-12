@@ -5,6 +5,7 @@ import { Button, Typography } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import red from "@material-ui/core/colors/red";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
+import Navbar from '../components/navbar'
 import About from "../components/about";
 import QuickSearch from "../components/quickSearch";
 import Step1 from "../components/step1";
@@ -38,47 +39,7 @@ export default function Home() {
             padding: "16px",
           })}
         >
-          <div
-            className={css({
-              display: "grid",
-              justifyContent: "center",
-            })}
-          >
-            <div
-              className={css({
-                display: "grid",
-                gridTemplateColumns: "auto auto",
-                gridTemplateRows: "auto auto",
-                columnGap: "8px",
-                justifyContent: "center",
-              })}
-            >
-              <img
-                className={css({
-                  height: "50px",
-                  gridColumn: "1",
-                  gridRow: "1/3",
-                  alignSelf: "center",
-                })}
-                src="/images/logo.jpeg"
-              />
-              <Typography
-                className={css({
-                  color: theme.palette.secondary.main,
-                  fontWeight: "bold",
-                })}
-                variant="h5"
-              >
-                Orai Mart
-              </Typography>
-              <Typography
-                className={css({ color: theme.palette.grey[800] })}
-                variant="body2"
-              >
-                Stay Home, Stay Safe
-              </Typography>
-            </div>
-          </div>
+          <Navbar />
           <div
             className={css({
               display: "grid",
@@ -146,7 +107,7 @@ export default function Home() {
       <Step2 />
       <Step3 />
       <WhyChooseUs />
-      <BecomePartner />
+      <BecomePartner button={true}/>
       <Footer />
     </div>
   );
