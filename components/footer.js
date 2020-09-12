@@ -25,7 +25,7 @@ export default function Footer() {
                 <div className={FooterStyles.Col}>
                     <h1>About Us</h1>
                     <ul  className={css({padding:0})}>
-                        <li><Link className={FooterStyles.FooterLinks} href="#"><a>Categories</a></Link></li>
+                        <li><Link className={FooterStyles.FooterLinks} href="/categories"><a>Categories</a></Link></li>
                         <li><Link className={FooterStyles.FooterLinks} href="#"><a>Become a Partner</a></Link></li>
                         <li><Link className={FooterStyles.FooterLinks} href="#"><a>Blog</a></Link></li>
                         <li><Link className={FooterStyles.FooterLinks} href="#"><a>Careers</a></Link></li>

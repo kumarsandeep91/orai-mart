@@ -1,4 +1,5 @@
 import { Button } from '@material-ui/core';
+import Link from 'next/link'
 import SearchStyles from "../styles/quickSearch.module.css";
 export default function quickSearch() {
     return (
@@ -29,10 +30,15 @@ export default function quickSearch() {
                     <p>Beverages</p>
                 </div>
             </div>
+         
             <div className={SearchStyles.ButtonContainer}>
-                <Button variant="contained" color="primary" className={SearchStyles.Button}>
-                    Explore More
-                </Button>
+                <Link href="/categories">
+                    <a>
+                        <Button variant="contained" color="primary" className={SearchStyles.Button}>
+                            Explore More
+                        </Button>
+                    </a>
+                </Link>
             </div>
         </div>
     )
