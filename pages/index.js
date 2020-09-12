@@ -5,13 +5,20 @@ import { Button, Typography } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import red from "@material-ui/core/colors/red";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-
+import About from '../components/about';
+import QuickSearch from '../components/quickSearch';
+import Step1 from '../components/step1';
+import Step2 from '../components/step2';
+import Step3 from '../components/step3';
+import WhyChooseUs from '../components/whyChooseUs';
+import BecomePartner from '../components/becomePartner';
+import Footer from '../components/footer';
 const useStyles = makeStyles((theme) => ({
+  
   button: {
     margin: theme.spacing(1),
   },
 }));
-
 export default function Home() {
   const [css] = useStyletron();
   const theme = useTheme();
@@ -134,8 +141,14 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}></footer>
+      <About />
+      <QuickSearch />
+      <Step1 />
+      <Step2 />
+      <Step3 />
+      <WhyChooseUs />
+      <BecomePartner />
+      <Footer />
     </div>
   );
 }

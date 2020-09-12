@@ -1,0 +1,121 @@
+.PartnerContainer{
+    padding: 0 120px 20px 120px;
+}
+
+.PartnerBox{
+    background:#FCC45C;
+    padding: 60px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "textBox imageArea";
+    margin-top: -80px;
+}
+.TextBox{
+    grid-area: textBox;
+}
+.imageArea{
+    grid-area: imageArea;
+    text-align: center;
+    position: relative;
+}
+.mainPartnerImg{
+    width: 250px;
+}
+.partner1{
+    position: absolute;
+    left: 40px;
+    top: 230px;
+    width: 130px;
+}
+.partner3{
+    position: absolute;
+    left: 40px;
+    top: -100px;
+    width: 130px;
+}
+
+.partner4{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 110px;
+}
+.Button{
+    background: #3BC08B;
+}
+
+.span{
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .PartnerContainer{
+        padding: 5px
+    }
+    
+    .PartnerBox{
+        grid-template-columns: 1fr;
+        grid-template-areas:  "imageArea" "textBox";
+        padding: 10px;
+    }
+    .textBox{
+        margin: 30px 0;
+    }
+    .imageArea{
+        text-align: center;
+    }
+
+    .mainPartnerImg{
+        width: 50%;
+    }
+    .partner1{
+        width: 20%;
+        top: 100px;
+        left: 0;
+    }
+    .partner3{
+        width: 30%;
+        top: -60px;
+        left: 0;
+    }
+    .partner4{
+        width: 25%;
+    }
+    .aboutRow{
+        grid-template-columns: repeat(auto-fit,90%);
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .ButtonBox{
+        text-align: center;
+    }
+    .Button{
+        width: 80%;
+        font-size: 18px;
+    }
+    .span{
+        display: inline;
+    }
+  }
+
+  
+  @media screen and (min-width: 490px) and (max-width: 768px) {
+    
+    .PartnerContainer{
+        padding: 10px;
+    }
+    .partner1{
+        width: 30%;
+        top: 250px;
+    }
+    .partner3{
+        width: 30%;
+    }
+    .partner4{
+        width: 30%;
+        right: 0px;
+
+    }
+  }
