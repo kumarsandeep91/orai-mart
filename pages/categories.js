@@ -32,8 +32,7 @@ export default function QuickSearch() {
                     <p>Beverages</p>
                 </div>
             </div>
-            <h1 className={SearchStyles.MainText} style={{textAlign:'center'}}>Coming Soon</h1>
-               <div className={SearchStyles.Row}>
+            <div className={SearchStyles.Row}>
                 <div className={SearchStyles.Col}>
                     <img src="/images/bread.svg" alt="Breads and Buns"/>
                     <p>Breads and Buns</p>
@@ -42,20 +41,6 @@ export default function QuickSearch() {
                     <img src="/images/milk.svg" alt="Dairy"/>
                     <p>Dairy</p>
                 </div>
-                <div className={SearchStyles.Col}>
-                    <img src="/images/seasoning.svg" alt="Seasoning"/>
-                    <p>Seasoning</p>
-                </div>
-                <div className={SearchStyles.Col}>
-                    <img src="/images/herbs.svg" alt="Herbs"/>
-                    <p>Fresh Herbs</p>
-                </div>
-                <div className={SearchStyles.Col}>
-                    <img src="/images/almond.svg" alt="Dry Fruits"/>
-                    <p>Dry Fruits</p>
-                </div>
-            </div>
-            <div className={SearchStyles.Row}>
                 <div className={SearchStyles.Col}>
                     <img src="/images/oil-bottle.svg" alt="Edible Oil"/>
                     <p>Edible Oil</p>
@@ -68,6 +53,10 @@ export default function QuickSearch() {
                     <img src="/images/rice.svg" alt="Rice and Rice Products"/>
                     <p>Rice and Rice Products</p>
                 </div>
+            
+            </div>
+            <div className={SearchStyles.Row}>
+               
                 <div className={SearchStyles.Col}>
                     <img src="/images/spices.svg" alt="Masala and Spices"/>
                     <p>Masala and Spices</p>
@@ -76,8 +65,6 @@ export default function QuickSearch() {
                     <img src="/images/sugar.svg" alt="Salt and Sugar"/>
                     <p>Salt and Sugar</p>
                 </div>
-            </div>
-            <div className={SearchStyles.Row}>
                 <div className={SearchStyles.Col}>
                     <img src="/images/biscuit.svg" alt="Biscuits and Cookies"/>
                     <p>Biscuits and Cookies</p>
@@ -90,6 +77,9 @@ export default function QuickSearch() {
                     <img src="/images/cereal.svg" alt="Breakfast Cereals"/>
                     <p>Breakfast Cereals</p>
                 </div>
+            </div>
+            <div className={SearchStyles.Row2}>
+                
                 <div className={SearchStyles.Col}>
                     <img src="/images/chocolate.svg" alt="Chocolates and Candies"/>
                     <p>Chocolates and Candies</p>
@@ -99,18 +89,35 @@ export default function QuickSearch() {
                     <p>Snacks and Namkeen</p>
                 </div>
             </div>
+            <h1 className={SearchStyles.MainText} style={{textAlign:'center'}}>Coming Soon</h1>
             <div className={SearchStyles.Row}>
+            <div className={SearchStyles.Col}>
+                    <img src="/images/seasoning.svg" alt="Seasoning"/>
+                    <p>Seasoning</p>
+                </div>
+                <div className={SearchStyles.Col}>
+                    <img src="/images/herbs.svg" alt="Herbs"/>
+                    <p>Fresh Herbs</p>
+                </div>
+                <div className={SearchStyles.Col}>
+                    <img src="/images/almond.svg" alt="Dry Fruits"/>
+                    <p>Dry Fruits</p>
+                </div>
                 <div className={SearchStyles.Col}>
                     <img src="/images/juice.svg" alt="Fruit Juices"/>
                     <p>Fruit Juices</p>
                 </div>
-                <div className={SearchStyles.Col}>
-                    <img src="/images/soda.svg" alt="Energy and Soft Drinks"/>
-                    <p>Energy and Soft Drinks</p>
-                </div>
+
                 <div className={SearchStyles.Col}>
                     <img src="/images/takeaway.svg" alt="Tea and Coffee"/>
                     <p>Tea and Coffee</p>
+                </div>
+            </div>
+
+            <div className={SearchStyles.Row3}>
+            <div className={SearchStyles.Col}>
+                    <img src="/images/soda.svg" alt="Energy and Soft Drinks"/>
+                    <p>Energy and Soft Drinks</p>
                 </div>
                 <div className={SearchStyles.Col}>
                     <img src="/images/shampoo.svg" alt="Personal Care"/>

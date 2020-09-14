@@ -1,0 +1,30 @@
+.comingSoon{
+    min-height: 100vh;
+}
+
+.comingSoonBox{
+    height:80vh;
+    text-align:center;
+    padding-top:50px;
+}
+.comingSoonBox img{
+    max-width:600px;
+}
+
+.comingSoonBox div{
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .comingSoon{
+        min-height: 70vh;
+    }
+    .comingSoonBox{
+        min-height:50vh;
+        text-align:center;
+        padding-top:50px;
+    }
+    .comingSoonBox img{
+        max-width:100%;
+    }
+  }
