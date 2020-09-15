@@ -14,14 +14,14 @@ export default function WhyChooseUs() {
                     <p>No order value restrictions, Order for yourself or your group</p>
                 </div>
                 <div className={ChooseStyles.Col}>
-                    <img src="/images/livetrack.svg" alt="Live Order Tracking"/>
-                    <h1>Live Order Tracking</h1>
-                    <p>Track your order anytime from the store to your doorstep</p>
+                    <img src="/images/livetrack.svg" alt="Live Updates"/>
+                    <h1>Live Updates</h1>
+                    <p>Live Updates on your order from the store</p>
                 </div>
                 <div className={ChooseStyles.Col}>
                     <img src="/images/delivery.svg" alt="24 x 7 delivery"/>
                     <h1>24 x 7 delivery</h1>
-                    <p>Order anytime, anywhere. Wewill get you delivered</p>
+                    <p>Order anytime, anywhere. We will get you delivered</p>
                 </div>
             </div>
         </div>

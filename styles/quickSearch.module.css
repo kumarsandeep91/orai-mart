@@ -25,6 +25,20 @@
     justify-content: center;
     margin: 50px 0 20px 0;
 }
+.Row2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30%);
+    padding: 10px 40px;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
+.Row3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30%);
+    padding: 10px 40px;
+    justify-content: center;
+    margin: 50px 0 20px 0;
+}
 .Col{
     margin: 10px;
     width: 80%;
@@ -48,6 +62,16 @@
         background: #FFFBF2;
     }
     .Row{
+        grid-template-columns: repeat(auto-fit,90%);
+        padding: 10px 20px;
+        justify-content: center;
+    }
+    .Row2{
+        grid-template-columns: repeat(auto-fit,90%);
+        padding: 10px 20px;
+        justify-content: center;
+    }
+    .Row3{
         grid-template-columns: repeat(auto-fit,90%);
         padding: 10px 20px;
         justify-content: center;
